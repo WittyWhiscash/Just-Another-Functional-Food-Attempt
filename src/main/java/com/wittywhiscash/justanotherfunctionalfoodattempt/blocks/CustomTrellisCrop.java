@@ -133,11 +133,14 @@ public class CustomTrellisCrop extends Block implements IGrowable, IPlantable {
         if (state.get(AGE) >= getMaxAge()) {
             world.setBlockState(pos, state.with(AGE, getMaxAge() - 1));
             Item heldItem = player.getHeldItem(hand).getItem();
+            ItemStack heldItemStack = player.getHeldItem(hand);
 
-            // TODO: Damage Item when harvested with a tool!
-            // Check if the player is holding a hoe. If so, modify the drop count in equivalency to something like fortune.
+            // Check if the player is holding a hoe. If so, modify the drop count in equivalency to something like fortune and damage the hoe.
             if (ItemTags.getCollection().get(JustAnotherFunctionalFoodAttempt.getHoeTag()).contains(heldItem)) {
                 Block.spawnAsEntity(world, pos.offset(result.getFace()), new ItemStack(getCrop(), 1 + RANDOM.nextInt(3)));
+                heldItemStack.damageItem(1, player, playerEntity -> {
+                    playerEntity.sendBreakAnimation(hand);
+                });
                 return true;
             }
             else {
