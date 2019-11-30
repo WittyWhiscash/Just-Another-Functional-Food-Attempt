@@ -2,10 +2,10 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "justanotherfunctionalfoodmod:garlic"
+            "item": "justanotherfunctionalfoodattempt:garlic"
         }
     ],
     "result": {
-        "item": "justanotherfunctionalfoodmod:garlic_seeds"
+        "item": "justanotherfunctionalfoodattempt:garlic_seeds"
     }
 }

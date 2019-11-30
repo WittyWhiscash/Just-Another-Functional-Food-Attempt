@@ -10,17 +10,17 @@
                     "children": [
                         {
                             "type": "minecraft:item",
-                            "name": "justanotherfunctionalfoodmod:tomato"
+                            "name": "justanotherfunctionalfoodattempt:tomato"
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "justanotherfunctionalfoodmod:tomato_seeds"
+                            "name": "justanotherfunctionalfoodattempt:tomato_seeds"
                         }
                     ],
                     "conditions": [
                         {
                             "condition": "minecraft:block_state_property",
-                            "block": "justanotherfunctionalfoodmod:tomato_crop",
+                            "block": "justanotherfunctionalfoodattempt:tomato_crop",
                             "properties": {
                                 "age": "7"
                             }
@@ -28,7 +28,7 @@
                         {
                             "condition": "minecraft:match_tool",
                             "predicate": {
-                                "tag": "justanotherfunctionalfoodmod:tools",
+                                "tag": "justanotherfunctionalfoodattempt:tools",
                                 "enchantments": [
                                     {
                                         "enchantment": "fortune",
@@ -64,17 +64,17 @@
                     "children": [
                         {
                             "type": "minecraft:item",
-                            "name": "justanotherfunctionalfoodmod:tomato"
+                            "name": "justanotherfunctionalfoodattempt:tomato"
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "justanotherfunctionalfoodmod:tomato_seeds"
+                            "name": "justanotherfunctionalfoodattempt:tomato_seeds"
                         }
                     ],
                     "conditions": [
                         {
                             "condition": "minecraft:block_state_property",
-                            "block": "justanotherfunctionalfoodmod:tomato_crop",
+                            "block": "justanotherfunctionalfoodattempt:tomato_crop",
                             "properties": {
                                 "age": "7"
                             }
@@ -89,7 +89,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "justanotherfunctionalfoodmod:tomato_seeds"
+                    "name": "justanotherfunctionalfoodattempt:tomato_seeds"
                 }
             ]
         }

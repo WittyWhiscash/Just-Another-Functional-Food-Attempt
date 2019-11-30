@@ -1,6 +1,6 @@
 {
     "parent": "block/crop",
     "textures": {
-        "crop": "justanotherfunctionalfoodmod:block/garlic_stage6"
+        "crop": "justanotherfunctionalfoodattempt:block/garlic_stage6"
     }
 }
