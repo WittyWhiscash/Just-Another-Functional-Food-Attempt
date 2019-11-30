@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "justanotherfoodmodattempt:tomato"
+        }
+    ],
+    "result": {
+        "item": "justanotherfoodmodattempt:tomato_seeds"
+    }
+}

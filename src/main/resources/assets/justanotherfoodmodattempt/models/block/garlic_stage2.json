@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "justanotherfoodmodattempt:block/garlic_stage2"
+    }
+}
