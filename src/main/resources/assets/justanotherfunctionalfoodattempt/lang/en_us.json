@@ -1,0 +1,12 @@
+{
+  "item.justanotherfunctionalfoodattempt.garlic": "Garlic",
+  "item.justanotherfunctionalfoodattempt.garlic_seeds": "Garlic Seeds",
+  "item.justanotherfunctionalfoodattempt.tomato": "Tomato",
+  "item.justanotherfunctionalfoodattempt.tomato_seeds": "Tomato Seeds",
+
+  "block.justanotherfunctionalfoodattempt.garlic_crop": "Garlic Crop",
+  "block.justanotherfunctionalfoodattempt.tomato_crop": "Tomato Crop",
+  "block.justanotherfunctionalfoodattempt.trellis": "Crop Trellis",
+
+  "itemgroup.justanotherfunctionalfoodattempt.name": "Just Another Food Mod Attempt"
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "justanotherfunctionalfoodmod:block/trellis_crop",
+    "textures": {
+        "crop": "justanotherfunctionalfoodmod:block/tomato_stage4"
+    }
+}
