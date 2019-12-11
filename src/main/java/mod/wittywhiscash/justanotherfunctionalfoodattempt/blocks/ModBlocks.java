@@ -15,6 +15,7 @@ public class ModBlocks {
     // Crops
     @ObjectHolder("garlic_crop") public static final Block GARLIC_CROP = null;
     @ObjectHolder("tomato_crop") public static final Block TOMATO_CROP = null;
+    @ObjectHolder("lettuce_crop") public static final Block LETTUCE_CROP = null;
 
     // Blocks
     @ObjectHolder("trellis") public static final Block TRELLIS = null;
@@ -25,7 +26,9 @@ public class ModBlocks {
         blockRegistryEvent.getRegistry().registerAll(
                 new CustomCrop().setRegistryName(JustAnotherFunctionalFoodAttempt.getId("garlic_crop")),
                 new CustomTrellisCrop(() -> ModItems.TOMATO, () -> ModItems.TOMATO_SEEDS).setRegistryName(JustAnotherFunctionalFoodAttempt.getId("tomato_crop")),
-                new TrellisBlock().setRegistryName(JustAnotherFunctionalFoodAttempt.getId("trellis"))
+                new CustomCrop().setRegistryName(JustAnotherFunctionalFoodAttempt.getId("lettuce_crop")),
+
+                new TrellisBlock().setRegistryName(JustAnotherFunctionalFoodAttempt.getId("trellis")),
         );
     }
 }

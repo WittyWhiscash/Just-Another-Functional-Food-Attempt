@@ -1,7 +1,11 @@
 package com.wittywhiscash.justanotherfunctionalfoodattempt;
 
+import com.wittywhiscash.justanotherfunctionalfoodattempt.inventory.containers.ModContainers;
+import com.wittywhiscash.justanotherfunctionalfoodattempt.inventory.screens.BeeHouseBlockScreen;
 import com.wittywhiscash.justanotherfunctionalfoodattempt.items.ModItems;
+import com.wittywhiscash.justanotherfunctionalfoodattempt.networking.PacketHandler;
 import com.wittywhiscash.justanotherfunctionalfoodattempt.setup.ModItemGroup;
+import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -42,6 +46,8 @@ public class JustAnotherFunctionalFoodAttempt
 
     private void setup(final FMLCommonSetupEvent event)
     {
+        ScreenManager.registerFactory(ModContainers.BEEHOUSE_CONTAINERTYPE, BeeHouseBlockScreen::new);
+        PacketHandler.registerMessages();
         LOGGER.debug("Finished Setup!");
     }
 

@@ -40,11 +40,12 @@ public class TrellisBlock extends Block {
         return SHAPE;
     }
 
-    // If we right click the block with an instance of a custom seed, change the state of the block to a custom trellis crop of type crop registered to the seeds.
+    // If we right click the block with an instance of a custom seed, and the block below us is farmland,
+    // change the state of the block to a custom trellis crop of type crop registered to the seeds.
     @Override
     public boolean onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockRayTraceResult result) {
         ItemStack stack = player.getHeldItem(hand);
-        if (!stack.isEmpty() && stack.getItem() instanceof TrellisSeedsItem) {
+        if (!stack.isEmpty() && stack.getItem() instanceof TrellisSeedsItem && world.getBlockState(pos.down()).getBlock() == Blocks.FARMLAND) {
                 world.setBlockState(pos, ((TrellisSeedsItem) stack.getItem()).getCropState());
                 if (!player.isCreative()) {
                     stack.shrink(1);

@@ -212,7 +212,8 @@ public class CustomTrellisCrop extends Block implements IGrowable, IPlantable {
         return this.getDefaultState();
     }
 
-    // Check if we can stay. Returns true if the block has a light of 8 or more OR if it can see the sky and if the block below is an instance of this OR the block below (usually referring to dirt/grass) can sustain a plant.
+    // Check if we can stay. Returns true if the block has a light of 8 or more OR if it can see the sky and if the block below is an instance of this
+    // OR the block below (usually referring to dirt/grass) can sustain a plant.
     public boolean canBlockStay(World world, BlockPos pos, BlockState state) {
         BlockState soil = world.getBlockState(pos.down());
         return (world.getLight(pos) >= 8 ||  world.canBlockSeeSky(pos) && (soil.getBlock() == this) || soil.getBlock().canSustainPlant(soil, world, pos, Direction.UP, this));
